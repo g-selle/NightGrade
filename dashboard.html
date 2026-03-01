@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightGrade Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Theme Toggle -->
+<button id="mode-toggle">🌙</button>
+
+<!-- Navigation -->
+<header class="dashboard-header">
+    <h1 class="dashboard-title">NightGrade</h1>
+</header>
+
+<!-- Main Content -->
+<main class="dashboard-main">
+<section class="welcome-section">
+<h2 class="welcome-text">Welcome Back 👋 </h2>
+    <p>Small progress is still progress.</p>
+</section>
+<h2 class="assignments-title">Your Assignments</h2>
+    <button class="add-btn">
+        + Add Assessment
+    </button>
+
+    <div class="assessment-container">
+        <!-- Cards appear here -->
+    </div>
+
+</main>
+
+<!-- Modal -->
+<div id="assessment-modal" class="modal">
+    <div class="modal-content">
+
+        <span id="close-modal">&times;</span>
+
+        <h3>Add New Assessment</h3>
+
+        <form id="assessment-form">
+            <input type="text" id="class-name" placeholder="Class" required>
+            <input type="text" id="assignment-name" placeholder="Assignment" required>
+            <input type="date" id="due-date" required>
+
+            <button type="submit" class="add-btn">
+                Add Assessment
+            </button>
+        </form>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
